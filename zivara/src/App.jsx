@@ -1,3 +1,4 @@
+import ScrollToTop from "./ScrollToTop";
 import background from "./assets/bg.jpg";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
@@ -13,6 +14,7 @@ import logo from "./assets/logo.jpg";
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
 
       <div
         className="min-h-screen bg-cover bg-center bg-fixed"
