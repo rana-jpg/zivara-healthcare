@@ -1,147 +1,83 @@
 function Services() {
   return (
-    <div className="min-h-screen px-10 py-24">
+    <div className="min-h-screen px-4 md:px-10 py-16 md:py-24">
 
+      {/* Header */}
       <div className="text-center">
 
-        <h1 className="text-6xl font-bold text-blue-950">
+        <h1 className="text-3xl md:text-6xl font-bold text-blue-950">
           Our Services
         </h1>
 
-        <p className="mt-6 text-xl text-gray-700 max-w-3xl mx-auto">
+        <p className="mt-6 text-base md:text-xl text-gray-700 max-w-3xl mx-auto">
           Complete Revenue Cycle Management solutions designed to improve
           efficiency, reduce denials, and maximize collections.
         </p>
 
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 mt-20 max-w-6xl mx-auto">
+      {/* Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-12 md:mt-20 max-w-6xl mx-auto">
 
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            Front-End Services
-          </h2>
+        {[
+          {
+            title: "Front-End Services",
+            desc: "Accurate patient registration, insurance verification, and eligibility checks to prevent billing errors."
+          },
+          {
+            title: "Charge Capture & Coding",
+            desc: "Precise documentation and coding to ensure maximum reimbursement and compliance."
+          },
+          {
+            title: "Claims Submission",
+            desc: "Timely and error-free claim submission to accelerate payment cycles."
+          },
+          {
+            title: "Payment Posting",
+            desc: "Quick and accurate posting of payments with proper reconciliation."
+          },
+          {
+            title: "AR Management",
+            desc: "Proactive follow-ups to reduce outstanding balances and improve cash flow."
+          },
+          {
+            title: "Denial Management",
+            desc: "Efficient correction and resubmission of denied claims to recover revenue."
+          },
+          {
+            title: "Patient Billing & Collections",
+            desc: "Clear patient communication and streamlined billing to ensure timely collections."
+          },
+          {
+            title: "Reporting & Analytics",
+            desc: "Detailed reports and insights to track performance and optimize revenue cycle efficiency."
+          },
+          {
+            title: "Credentialing & Enrollment",
+            desc: "Hassle-free provider enrollment with insurance payers for uninterrupted billing."
+          },
+          {
+            title: "Compliance & Auditing",
+            desc: "Regular audits and compliance checks to meet industry standards and avoid risks."
+          },
+          {
+            title: "Others",
+            desc: "Customized solutions tailored to meet your unique practice needs"
+          }
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="bg-white/30 backdrop-blur-md p-6 md:p-8 rounded-2xl md:rounded-3xl border border-white/40 shadow-2xl"
+          >
+            <h2 className="text-lg md:text-2xl font-bold text-blue-900">
+              {item.title}
+            </h2>
 
-          <p className="mt-4 text-gray-700">
-            Accurate patient registration, insurance verification,
-            and eligibility checks to prevent billing errors.
-          </p>
-        </div>
-
-
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            Charge Capture & Coding
-          </h2>
-
-          <p className="mt-4 text-gray-700">
-            Precise documentation and coding to ensure maximum
-            reimbursement and compliance.
-          </p>
-        </div>
-
-
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            Claims Submission
-          </h2>
-
-          <p className="mt-4 text-gray-700">
-            Timely and error-free claim submission to accelerate
-            payment cycles.
-          </p>
-        </div>
-
-
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            Payment Posting
-          </h2>
-
-          <p className="mt-4 text-gray-700">
-            Quick and accurate posting of payments with proper
-            reconciliation.
-          </p>
-        </div>
-
-
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            AR Management
-          </h2>
-
-          <p className="mt-4 text-gray-700">
-            Proactive follow-ups to reduce outstanding balances
-            and improve cash flow.
-          </p>
-        </div>
-
-
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            Denial Management
-          </h2>
-
-          <p className="mt-4 text-gray-700">
-            Efficient correction and resubmission of denied claims
-            to recover revenue.
-          </p>
-        </div>
-
-
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            Patient Billing & Collections
-          </h2>
-
-          <p className="mt-4 text-gray-700">
-            Clear patient communication and streamlined billing to ensure timely collections.
-          </p>
-        </div>
-
-
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            Reporting & Analytics
-          </h2>
-
-          <p className="mt-4 text-gray-700">
-            Detailed reports and insights to track performance and optimize revenue cycle efficiency.
-          </p>
-        </div>
-
-
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            Credentialing & Enrollment
-          </h2>
-
-          <p className="mt-4 text-gray-700">
-            Hassle-free provider enrollment with insurance payers for uninterrupted billing.
-          </p>
-        </div>
-
-
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            Compliance & Auditing
-          </h2>
-
-          <p className="mt-4 text-gray-700">
-            Regular audits and compliance checks to meet industry standards and avoid risks.
-          </p>
-        </div>
-
-
-        <div className="bg-white/30 backdrop-blur-md p-8 rounded-3xl border border-white/40 shadow-2xl">
-          <h2 className="text-2xl font-bold text-blue-900">
-            Others
-          </h2>
-
-          <p className="mt-4 text-gray-700">
-            Customized solutions tailored to meet your unique practice needs
-          </p>
-        </div>
+            <p className="mt-3 md:mt-4 text-sm md:text-gray-700">
+              {item.desc}
+            </p>
+          </div>
+        ))}
 
       </div>
 
