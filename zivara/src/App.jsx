@@ -25,18 +25,16 @@ function App() {
         <div className="min-h-screen backdrop-blur-[2px] bg-white/20">
 
           {/* Navbar */}
-          <nav className="flex justify-between items-center px-10 py-6 backdrop-blur-xl bg-white/40 sticky top-0 z-50 border-b border-white/30 shadow-lg">
-
+          <nav className="flex flex-col md:flex-row justify-between items-center px-4 md:px-10 py-4 md:py-6 backdrop-blur-xl bg-white/40 sticky top-0 z-50 border-b border-white/30 shadow-lg">
             <div>
               <img
                 src={logo}
                 alt="Zivara Logo"
-                className="h-20"
+                className="h-14 md:h-20"
               />
             </div>
 
-            <div className="flex gap-8 text-lg font-semibold">
-
+            <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8 text-sm md:text-lg font-semibold mt-3 md:mt-0">
   <NavLink
     to="/"
     className={({ isActive }) =>
