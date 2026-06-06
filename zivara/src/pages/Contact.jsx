@@ -17,9 +17,8 @@ function Contact() {
 
       </div>
 
-
       {/* Contact Card */}
-      <div className="max-w-4xl mx-auto mt-12 md:mt-16 bg-white/30 backdrop-blur-md p-6 md:p-12 rounded-2xl md:rounded-3xl border border-white/40 shadow-2xl">
+      <div className="max-w-4xl mx-auto mt-16 md:mt-20 bg-white/30 backdrop-blur-md p-6 md:p-12 rounded-2xl md:rounded-3xl border border-white/40 shadow-2xl">
 
         <h2 className="text-2xl md:text-3xl font-bold text-blue-900 text-center">
           Get In Touch
@@ -29,8 +28,7 @@ function Contact() {
           Contact us for enquiries, pricing, or healthcare billing support.
         </p>
 
-
-        <div className="mt-8 md:mt-12 space-y-6 md:space-y-8 text-center">
+        <div className="mt-8 md:mt-12 space-y-8 text-center">
 
           {/* Email */}
           <div>
@@ -43,8 +41,39 @@ function Contact() {
             </p>
           </div>
 
+          {/* LinkedIn */}
+          <div>
+            <h3 className="text-xl md:text-2xl font-semibold text-blue-950">
+              LinkedIn
+            </h3>
 
-          {/* Form */}
+            <a
+              href="https://www.linkedin.com/company/zivara-healthcare-solutions/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block bg-blue-800 text-white px-6 py-3 rounded-2xl hover:bg-blue-900 transition shadow-lg"
+            >
+              Visit LinkedIn
+            </a>
+          </div>
+
+          {/* Instagram */}
+          <div>
+            <h3 className="text-xl md:text-2xl font-semibold text-blue-950">
+              Instagram
+            </h3>
+
+            <a
+              href="https://www.instagram.com/zivarahealthcaresolutions?igsh=YWZmYms2cjZmbnls"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block bg-blue-800 text-white px-6 py-3 rounded-2xl hover:bg-blue-900 transition shadow-lg"
+            >
+              Visit Instagram
+            </a>
+          </div>
+
+          {/* Enquiry Form */}
           <div>
             <h3 className="text-xl md:text-2xl font-semibold text-blue-950">
               Enquiry Form
@@ -54,7 +83,7 @@ function Contact() {
               href="https://forms.gle/XoSZsotuEmqdvidU7"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block bg-blue-800 text-white px-5 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-xl md:rounded-2xl hover:bg-blue-900 transition shadow-lg"
+              className="mt-4 inline-block bg-blue-800 text-white px-6 py-3 rounded-2xl hover:bg-blue-900 transition shadow-lg"
             >
               Open Enquiry Form
             </a>
