@@ -36,9 +36,12 @@ function Contact() {
               Email
             </h3>
 
-            <p className="mt-2 text-sm md:text-lg text-gray-800 break-all">
+            <a
+              href="mailto:zivarahealthcaresolution@gmail.com"
+              className="mt-4 inline-block bg-blue-800 text-white px-6 py-3 rounded-2xl hover:bg-blue-900 transition shadow-lg"
+            >
               zivarahealthcaresolution@gmail.com
-            </p>
+            </a>
           </div>
 
           {/* LinkedIn */}

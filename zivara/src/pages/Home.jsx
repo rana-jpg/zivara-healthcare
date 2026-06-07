@@ -87,7 +87,7 @@ function Home() {
           {[
             {
               title: "Cost-Effective Solutions",
-              desc: "Flexible pricing starting at just $1–$2 per patient, making services accessible for practices of all sizes."
+              desc: "Flexible pricing starting at just $2–$3 per patient, making services accessible for practices of all sizes."
             },
             {
               title: "Faster Claim Processing",

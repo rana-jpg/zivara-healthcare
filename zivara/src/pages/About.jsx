@@ -8,27 +8,17 @@ function About() {
           About Us
         </h1>
 
-        <p className="mt-6 md:mt-10 text-lg md:text-2xl text-blue-800 font-semibold">
-          Our Mission
+        <p className="mt-6 md:mt-10 text-base md:text-xl text-gray-700 leading-7 md:leading-9">
+          Founded in <strong>2022</strong>, <strong>Zivara Healthcare Solutions</strong> is a trusted Revenue Cycle Management (RCM) partner dedicated to helping healthcare providers improve financial performance and streamline billing operations. Since our inception, we have successfully supported numerous healthcare practices by reducing claim denials, accelerating reimbursements, and optimizing revenue cycles.
         </p>
 
-        <p className="mt-3 md:mt-4 text-base md:text-xl text-gray-700 leading-7 md:leading-9">
-          To simplify medical billing and empower healthcare providers
-          with efficient, transparent, and affordable revenue cycle solutions.
+        <p className="mt-6 md:mt-8 text-base md:text-xl text-gray-700 leading-7 md:leading-9">
+          Our experienced team provides end-to-end RCM services, including medical billing, coding, claims management, payment posting, and accounts receivable follow-up. At Zivara, we combine industry expertise with a client-focused approach to deliver reliable, efficient, and results-driven solutions.
         </p>
 
-        <div className="mt-10 md:mt-16">
-
-          <p className="text-lg md:text-2xl text-blue-800 font-semibold">
-            Our Vision
-          </p>
-
-          <p className="mt-3 md:mt-4 text-base md:text-xl text-gray-700 leading-7 md:leading-9">
-            To become a trusted global partner in healthcare billing by
-            delivering consistent results and innovative solutions.
-          </p>
-
-        </div>
+        <p className="mt-6 md:mt-8 text-lg md:text-2xl font-semibold text-blue-800">
+          Your Revenue. Our Expertise. Better Healthcare Outcomes.
+        </p>
 
       </div>
 
