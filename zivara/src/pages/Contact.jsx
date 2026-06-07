@@ -38,7 +38,7 @@ function Contact() {
 
             <a
               href="mailto:zivarahealthcaresolution@gmail.com"
-              className="mt-4 inline-block bg-blue-800 text-white px-6 py-3 rounded-2xl hover:bg-blue-900 transition shadow-lg"
+              className="mt-4 inline-flex items-center justify-center text-center bg-blue-800 text-white px-4 md:px-6 py-3 rounded-2xl hover:bg-blue-900 transition shadow-lg break-all max-w-full"
             >
               zivarahealthcaresolution@gmail.com
             </a>
