@@ -9,7 +9,7 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import WhyChooseUs from "./pages/WhyChooseus";
 
-import logo from "./assets/logo.jpg";
+import logo from "./assets/logo.png";
 
 function App() {
   return (
@@ -32,8 +32,8 @@ function App() {
               <img
                 src={logo}
                 alt="Zivara Logo"
-                className="h-14 md:h-20"
-              />
+                className="h-14 md:h-20 object-contain"
+             />
             </div>
 
             <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8 text-sm md:text-lg font-semibold mt-3 md:mt-0">
