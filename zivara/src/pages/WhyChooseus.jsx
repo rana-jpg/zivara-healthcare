@@ -37,10 +37,10 @@ function WhyChooseUs() {
   return (
     <section
       id="whychooseus"
-      className="px-4 md:px-10 py-16 md:py-24"
+      className="px-4 sm:px-6 md:px-10 py-16 md:py-24"
     >
       {/* Header */}
-      <div className="text-center">
+      <div className="text-center max-w-4xl mx-auto">
 
         <h1 className="text-3xl md:text-6xl font-bold text-blue-950">
           Why Choose Us
@@ -55,19 +55,19 @@ function WhyChooseUs() {
       </div>
 
       {/* Benefits Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-12 md:mt-20 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-12 md:mt-20 max-w-7xl mx-auto">
 
         {benefits.map((benefit, index) => (
           <div
             key={index}
-            className="bg-white/30 backdrop-blur-md p-6 md:p-10 rounded-2xl md:rounded-3xl border border-white/40 shadow-2xl hover:-translate-y-1 md:hover:-translate-y-2 transition duration-300"
+            className="h-full bg-white/30 backdrop-blur-md p-6 md:p-8 rounded-2xl md:rounded-3xl border border-white/40 shadow-2xl hover:-translate-y-1 transition duration-300"
           >
 
-            <h2 className="text-xl md:text-3xl font-bold text-blue-900">
+            <h2 className="text-xl md:text-2xl font-bold text-blue-900">
               {benefit.title}
             </h2>
 
-            <p className="mt-3 md:mt-4 text-sm md:text-lg text-gray-700 leading-7 md:leading-8">
+            <p className="mt-4 text-sm md:text-lg text-gray-700 leading-7 md:leading-8">
               {benefit.desc}
             </p>
 

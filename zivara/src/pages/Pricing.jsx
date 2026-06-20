@@ -28,7 +28,10 @@ function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="px-4 md:px-10 py-16 md:py-24">
+    <section
+      id="pricing"
+      className="px-4 sm:px-6 lg:px-10 py-16 md:py-24"
+    >
 
       {/* Header */}
       <div className="text-center">
@@ -42,7 +45,8 @@ function Pricing() {
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 mt-12 md:mt-20 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8 mt-12 md:mt-20 max-w-6xl mx-auto">
+
         {pricingPlans.map((plan, index) => (
           <div
             key={index}
@@ -89,6 +93,7 @@ function Pricing() {
             </p>
           </div>
         ))}
+
       </div>
 
       {/* Cost Comparison */}
@@ -142,7 +147,7 @@ function Pricing() {
                   colSpan="2"
                   className="bg-blue-900 text-white font-bold text-lg md:text-2xl py-4"
                 >
-                  ZIVARA FULL SERVICE MEDICAL BILLING COSTS
+                  ZIVARA HEALTHCARE SOLUTIONS FULL SERVICE MEDICAL BILLING COSTS
                 </td>
               </tr>
 
@@ -174,7 +179,7 @@ function Pricing() {
                   colSpan="2"
                   className="bg-blue-900 text-white font-bold text-lg md:text-2xl py-4"
                 >
-                  ANNUAL SAVINGS WITH ZIVARA
+                  ANNUAL SAVINGS WITH ZIVARA HEALTHCARE SOLUTIONS
                 </td>
               </tr>
 
@@ -188,11 +193,14 @@ function Pricing() {
               </tr>
 
             </tbody>
+
           </table>
 
         </div>
+
       </div>
-            {/* Our Experienced Team */}
+
+      {/* Our Experienced Team */}
       <div className="mt-16 md:mt-24">
 
         <h2 className="text-2xl md:text-4xl font-bold text-blue-950 text-center">
@@ -200,7 +208,7 @@ function Pricing() {
         </h2>
 
         <p className="mt-6 max-w-5xl mx-auto text-center text-gray-700 text-base md:text-xl leading-8">
-          Zivara is backed by healthcare industry experts with over 11 years of
+          Zivara Healthcare Solutions is backed by healthcare industry experts with over 11 years of
           experience in U.S. healthcare and end-to-end revenue cycle management
           services. Our dedicated team proudly serves more than 34 practices
           across the United States, achieving a 99% success rate in enhancing

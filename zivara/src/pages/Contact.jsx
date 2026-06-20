@@ -2,21 +2,21 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="px-4 md:px-10 py-16 md:py-24 relative"
+      className="px-4 sm:px-6 md:px-10 py-16 md:py-24 relative"
     >
 
       {/* Contact Number */}
-      <div className="absolute top-0 right-4 md:right-10">
+      <div className="flex justify-end mb-6">
         <a
           href="tel:+919099888336"
-          className="inline-flex items-center gap-2 bg-blue-800 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-900 transition font-semibold"
+          className="inline-flex items-center gap-2 bg-blue-800 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-900 transition font-semibold text-sm md:text-base"
         >
           📞 +91 90998 88336
         </a>
       </div>
 
       {/* Header */}
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center">
         <h1 className="text-3xl md:text-6xl font-bold text-blue-950">
           Contact Us
         </h1>
@@ -29,7 +29,7 @@ function Contact() {
       </div>
 
       {/* Contact Card */}
-      <div className="max-w-4xl mx-auto mt-16 md:mt-20 bg-white/30 backdrop-blur-md p-6 md:p-12 rounded-2xl md:rounded-3xl border border-white/40 shadow-2xl">
+      <div className="max-w-5xl mx-auto mt-16 md:mt-20 bg-white/30 backdrop-blur-md p-6 md:p-12 rounded-2xl md:rounded-3xl border border-white/40 shadow-2xl">
 
         <h2 className="text-2xl md:text-3xl font-bold text-blue-900 text-center">
           Get In Touch

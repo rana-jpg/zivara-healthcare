@@ -47,35 +47,37 @@ function Services() {
   ];
 
   return (
-    <section id="services" className="px-4 md:px-10 py-16 md:py-24">
+    <section id="services" className="px-4 md:px-10 py-10 md:py-20">
+
       <div className="text-center">
         <h1 className="text-3xl md:text-6xl font-bold text-blue-950">
           Services & Solutions
         </h1>
 
-        <p className="mt-6 text-base md:text-xl text-gray-700 max-w-4xl mx-auto leading-7 md:leading-9">
+        <p className="mt-5 text-base md:text-xl text-gray-700 max-w-4xl mx-auto leading-7 md:leading-9">
           Comprehensive Revenue Cycle Management services designed to improve
           operational efficiency, reduce denials, accelerate reimbursements,
           and maximize revenue.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-12 md:mt-20 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-10 md:mt-16 max-w-7xl mx-auto">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white/30 backdrop-blur-md p-6 md:p-8 rounded-2xl md:rounded-3xl border border-white/40 shadow-2xl hover:-translate-y-1 transition duration-300"
+            className="bg-white/30 backdrop-blur-md p-5 md:p-8 rounded-2xl md:rounded-3xl border border-white/40 shadow-2xl hover:-translate-y-1 transition duration-300"
           >
             <h2 className="text-lg md:text-2xl font-bold text-blue-900">
               {service.title}
             </h2>
 
-            <p className="mt-4 text-gray-700 leading-7">
+            <p className="mt-3 text-gray-700 leading-7">
               {service.desc}
             </p>
           </div>
         ))}
       </div>
+
     </section>
   );
 }
