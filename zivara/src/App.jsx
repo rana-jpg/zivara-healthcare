@@ -1,6 +1,6 @@
-import ScrollToTop from "./ScrollToTop";
 import background from "./assets/bg.jpg";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import logo from "./assets/logo.png";
+import { FaPhoneAlt } from "react-icons/fa";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -9,126 +9,98 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import WhyChooseUs from "./pages/WhyChooseus";
 
-import logo from "./assets/logo.png";
 
 function App() {
   return (
-    <BrowserRouter>
-    <ScrollToTop />
+    <div
+      className="min-h-screen bg-cover bg-center bg-fixed"
+      style={{
+        backgroundImage: `url(${background})`,
+      }}
+    >
+      {/* Overlay */}
+      <div className="min-h-screen backdrop-blur-[2px] bg-white/20">
 
-      <div
-        className="min-h-screen bg-cover bg-center bg-fixed"
-        style={{
-          backgroundImage: `url(${background})`,
-        }}
-      >
+        {/* Navbar */}
+        <nav className="flex flex-col md:flex-row justify-between items-center px-4 md:px-10 py-4 md:py-6 backdrop-blur-xl bg-white/40 sticky top-0 z-50 border-b border-white/30 shadow-lg">
 
-        {/* Overlay */}
-        <div className="min-h-screen backdrop-blur-[2px] bg-white/20">
+          {/* Logo */}
+          <div>
+            <img
+              src={logo}
+              alt="Zivara Logo"
+              className="h-14 md:h-20 object-contain"
+            />
+          </div>
 
-          {/* Navbar */}
-          <nav className="flex flex-col md:flex-row justify-between items-center px-4 md:px-10 py-4 md:py-6 backdrop-blur-xl bg-white/40 sticky top-0 z-50 border-b border-white/30 shadow-lg">
-            <div>
-              <img
-                src={logo}
-                alt="Zivara Logo"
-                className="h-14 md:h-20 object-contain"
-             />
-            </div>
+          {/* Navigation */}
+          <div className="flex flex-wrap justify-center md:justify-end items-center gap-4 md:gap-8 text-sm md:text-lg font-semibold mt-3 md:mt-0">
 
-            <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-8 text-sm md:text-lg font-semibold mt-3 md:mt-0">
-  <NavLink
-    to="/"
-    className={({ isActive }) =>
-      isActive
-        ? "text-blue-900 border-b-2 border-blue-900 pb-1"
-        : "text-gray-700 hover:text-blue-900 transition"
-    }
-  >
-    Home
-  </NavLink>
+            <a
+              href="#home"
+              className="text-gray-700 hover:text-blue-900 transition"
+            >
+              Home
+            </a>
 
-  <NavLink
-    to="/about"
-    className={({ isActive }) =>
-      isActive
-        ? "text-blue-900 border-b-2 border-blue-900 pb-1"
-        : "text-gray-700 hover:text-blue-900 transition"
-    }
-  >
-    About Us
-  </NavLink>
+            <a
+              href="#about"
+              className="text-gray-700 hover:text-blue-900 transition"
+            >
+              About Us
+            </a>
 
-  <NavLink
-    to="/services"
-    className={({ isActive }) =>
-      isActive
-        ? "text-blue-900 border-b-2 border-blue-900 pb-1"
-        : "text-gray-700 hover:text-blue-900 transition"
-    }
-  >
-    Services
-  </NavLink>
+            <a
+              href="#services"
+              className="text-gray-700 hover:text-blue-900 transition"
+            >
+              Services
+            </a>
 
-  <NavLink
-    to="/pricing"
-    className={({ isActive }) =>
-      isActive
-        ? "text-blue-900 border-b-2 border-blue-900 pb-1"
-        : "text-gray-700 hover:text-blue-900 transition"
-    }
-  >
-    Pricing
-  </NavLink>
+            <a
+              href="#whychooseus"
+              className="text-gray-700 hover:text-blue-900 transition"
+            >
+              Why Choose Us
+            </a>
 
-  <NavLink
-    to="/whychooseus"
-    className={({ isActive }) =>
-      isActive
-        ? "text-blue-900 border-b-2 border-blue-900 pb-1"
-        : "text-gray-700 hover:text-blue-900 transition"
-    }
-  >
-    Why Choose Us
-  </NavLink>
+            <a
+              href="#pricing"
+              className="text-gray-700 hover:text-blue-900 transition"
+            >
+              Pricing
+            </a>
 
-  <NavLink
-    to="/contact"
-    className={({ isActive }) =>
-      isActive
-        ? "text-blue-900 border-b-2 border-blue-900 pb-1"
-        : "text-gray-700 hover:text-blue-900 transition"
-    }
-  >
-    Contact Us
-  </NavLink>
+            <a
+              href="#contact"
+              className="text-gray-700 hover:text-blue-900 transition"
+            >
+              Contact Us
+            </a>
 
-</div>
+            {/* Phone Button */}
+            <a
+              href="tel:+919099888336"
+              className="flex items-center gap-2 bg-blue-800 text-white px-4 py-2 rounded-xl hover:bg-blue-900 transition shadow-lg"
+            >
+              <FaPhoneAlt />
+              +91 90998 88336
+            </a>
 
-          </nav>
+          </div>
 
-          {/* Routes */}
-          <Routes>
+        </nav>
 
-            <Route path="/" element={<Home />} />
-
-            <Route path="/about" element={<About />} />
-
-            <Route path="/services" element={<Services />} />
-
-            <Route path="/pricing" element={<Pricing />} />
-
-            <Route path="/whychooseus" element={<WhyChooseUs />} />
-
-            <Route path="/contact" element={<Contact />} />
-
-          </Routes>
-
-        </div>
+        {/* One Page Layout */}
+        <Home />
+        <About />
+        <Services />
+        <WhyChooseUs />
+        <Pricing />
+        <Contact />
 
       </div>
-
-    </BrowserRouter>
+    </div>
   );
 }
 

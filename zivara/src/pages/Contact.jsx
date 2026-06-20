@@ -1,10 +1,22 @@
 function Contact() {
   return (
-    <div className="min-h-screen px-4 md:px-10 py-16 md:py-24">
+    <section
+      id="contact"
+      className="px-4 md:px-10 py-16 md:py-24 relative"
+    >
+
+      {/* Contact Number */}
+      <div className="absolute top-0 right-4 md:right-10">
+        <a
+          href="tel:+919099888336"
+          className="inline-flex items-center gap-2 bg-blue-800 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-900 transition font-semibold"
+        >
+          📞 +91 90998 88336
+        </a>
+      </div>
 
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center">
-
         <h1 className="text-3xl md:text-6xl font-bold text-blue-950">
           Contact Us
         </h1>
@@ -12,9 +24,8 @@ function Contact() {
         <p className="mt-6 text-base md:text-xl text-gray-700 leading-7 md:leading-8">
           Ready to maximize your revenue?
           Partner with Zivara Healthcare Solutions and experience
-          hassle-free medical billing.
+          hassle-free Revenue Cycle Management services.
         </p>
-
       </div>
 
       {/* Contact Card */}
@@ -25,7 +36,7 @@ function Contact() {
         </h2>
 
         <p className="mt-4 md:mt-6 text-center text-sm md:text-lg text-gray-700">
-          Contact us for enquiries, pricing, or healthcare billing support.
+          Contact us for enquiries, pricing, onboarding, or healthcare billing support.
         </p>
 
         <div className="mt-8 md:mt-12 space-y-8 text-center">
@@ -96,7 +107,7 @@ function Contact() {
 
       </div>
 
-    </div>
+    </section>
   );
 }
 
